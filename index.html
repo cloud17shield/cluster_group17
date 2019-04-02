@@ -1,857 +1,761 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Home</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-1.11.0.min.js"></script>
-<!-- Custom Theme files -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-<link rel="stylesheet" type="text/css" href="css/style1.css" />
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--Google Fonts-->
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Rambla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-	</script>
-<!-- //end-smoth-scrolling -->
-<script type="text/javascript" src="js/modernizr.custom.js"></script> 
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<script src="js/bootstrap.min.js"></script>
+    <title>Home</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/style1.css"/>
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rambla:400,400italic,700,700italic' rel='stylesheet'
+          type='text/css'>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smoth-scrolling -->
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen"/>
+    <script src="js/bootstrap.min.js"></script>
 
 </head>
 <body>
 <!--banner strat here-->
 <div class="banner">
-	<div class="container">
-		<div class="banner-main">
-			<div class="banner-text">
-				<a href="index.html"><div class="logo">
-					<h1>How Cute Is That Doggy/Kitty In The Shelter?</h1>
-					<p>Comp7305 Group 17</p>
-				</div></a>			 
-			</div>
-			<h3>Pet Adoption Speed Prediction Based on Image and Text Information</h3>
-		</div>
-	</div>
+    <div class="container">
+        <div class="banner-main">
+            <div class="banner-text">
+                <a href="index.html">
+                    <div class="logo">
+                        <h1>How Cute Is That Doggy/Kitty In The Shelter?</h1>
+                        <p>Comp7305 Group 17</p>
+                    </div>
+                </a>
+            </div>
+            <h3>Pet Adoption Speed Prediction Based on Image and Text Information</h3>
+        </div>
+    </div>
 </div>
 <!--baner end here-->
 <!--header start here-->
 <div class="header-bottom">
-  <div class="fixed-header">	
-	<div class="container">
-		<div class="header-main">
-			<div class="header-left">
-				<h2><a href="index.html">Comp7305 Group 17</a></h2>
-			</div>
-			<div class="header-right">					
-				  <div class="top-nav">
-					<span class="menu"><img src="images/menu.png" alt=""/></span>
-					<ul class="nav1">
-						<li><a href="index.html" class="active">Home</a></li>
-						<li><a class="scroll" href="#about">Project Description</a></li>
-						<li><a class="scroll" href="#services">Data Collection</a></li>
-						<li><a class="scroll" href="#gallery">Job Division</a></li>
-						<li><a class="scroll" href="#contact" >Meeting Record</a></li>
-					</ul>	
-					<!-- script-for-menu -->
-					 <script>
-					   $( "span.menu" ).click(function() {
-						 $( "ul.nav1" ).slideToggle( 300, function() {
-						 // Animation complete.
-						  });
-						 });
-					</script>
-					<!-- /script-for-menu -->
-					<!-- script-for sticky-nav -->
-		<script>
-		$(document).ready(function() {
-			 var navoffeset=$(".header-bottom").offset().top;
-			 $(window).scroll(function(){
-				var scrollpos=$(window).scrollTop(); 
-				if(scrollpos >=navoffeset){
-					$(".header-bottom").addClass("fixed");
-				}else{
-					$(".header-bottom").removeClass("fixed");
-				}
-			 });
-			 
-		});
-		</script>
-		<!-- /script-for sticky-nav -->
-				</div>
-			 </div>
-			</div>
-		  <div class="clearfix"> </div>
-		</div>
-	</div>
+    <div class="fixed-header">
+        <div class="container">
+            <div class="header-main">
+                <div class="header-left">
+                    <h2><a href="index.html">Comp7305 Group 17</a></h2>
+                </div>
+                <div class="header-right">
+                    <div class="top-nav">
+                        <span class="menu"><img src="images/menu.png" alt=""/></span>
+                        <ul class="nav1">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a class="scroll" href="#about">Project Description</a></li>
+                            <li><a class="scroll" href="#services">Data Collection</a></li>
+                            <li><a class="scroll" href="#gallery">Job Division</a></li>
+                            <li><a class="scroll" href="#contact">Meeting Record</a></li>
+                        </ul>
+                        <!-- script-for-menu -->
+                        <script>
+                            $("span.menu").click(function () {
+                                $("ul.nav1").slideToggle(300, function () {
+                                    // Animation complete.
+                                });
+                            });
+                        </script>
+                        <!-- /script-for-menu -->
+                        <!-- script-for sticky-nav -->
+                        <script>
+                            $(document).ready(function () {
+                                var navoffeset = $(".header-bottom").offset().top;
+                                $(window).scroll(function () {
+                                    var scrollpos = $(window).scrollTop();
+                                    if (scrollpos >= navoffeset) {
+                                        $(".header-bottom").addClass("fixed");
+                                    } else {
+                                        $(".header-bottom").removeClass("fixed");
+                                    }
+                                });
+
+                            });
+                        </script>
+                        <!-- /script-for sticky-nav -->
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
 </div>
 <!--header end here-->
 <!--About strat here-->
 <div class="about" id="about">
-	<div class="container">
-		<div class="about-main">
-			          <h3>Project Description</h3>
-			<div class="col-md-4 about-left">
-				<img src="images/thumbnail.png" alt="" class="img-responsive">
-			</div>
-			<div class="col-md-8 about-right">
-				<p>This project will use the data from a competition on Kaggle website to train an algorithm to predict how quickly is a pet adopted, according to the text information (age, breed, color, maturity size, and so on) and/or the image information (photos of corresponding pets). The image part of the training set is 1.7GB; the image part of the test set is 400MB. Therefore the total data used in our 8-VM cluster will be larger than 2GB. The prediting function will be implemented in a web UI, users can upload a picture of a pet and/or some text information of this pet. the predicting results of how many days before this pet can be adopted will be returned on web UI after users click “predict” button.
-				</p>
-			</div>
-		  <div class="clearfix"> </div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="about-main">
+            <h3>Project Description</h3>
+            <div class="col-md-4 about-left">
+                <img src="images/thumbnail.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-8 about-right">
+                <p>This project will use the data from a competition on Kaggle website to train an algorithm to predict
+                    how quickly is a pet adopted, according to the text information (age, breed, color, maturity size,
+                    and so on) and/or the image information (photos of corresponding pets). The image part of the
+                    training set is 1.7GB; the image part of the test set is 400MB. Therefore the total data used in our
+                    8-VM cluster will be larger than 2GB. The prediting function will be implemented in a web UI, users
+                    can upload a picture of a pet and/or some text information of this pet. the predicting results of
+                    how many days before this pet can be adopted will be returned on web UI after users click “predict”
+                    button.
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
 </div>
-<!--About text end here-->
-<!--pets show strat here-->
-<!--
-<div class="pets-show">
-	<div class="container">
-		<section class="slider">
-		 <div class="flexslider">
-			<ul class="slides">
-			  <li>
-			  	<div class="pets-show-main">
-					<div class="col-md-6 pets-show-left">
-						<h3>Temporibus autem quibusdam et aut officiis </h3>
-						<h4>cum soluta nobis est eligendi optio</h4>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
-					</div>
-					<div class="col-md-6 pets-show-right">
-						<img src="images/p2.png" alt="" class="img-responsive">
-					</div>
-				 <div class="clearfix"> </div>
-				</div>
-			  </li>
-			  <li>
-			 	<div class="pets-show-main">
-					<div class="col-md-6 pets-show-left">
-						<h3>Temporibus autem quibusdam et aut officiis </h3>
-						<h4>cum soluta nobis est eligendi optio</h4>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
-					</div>
-					<div class="col-md-6 pets-show-right">
-						<img src="images/p4.png" alt="" class="img-responsive">
-					</div>
-				  <div class="clearfix"> </div>
-				</div>
-			  </li>
-			  <li>
-			 	<div class="pets-show-main">
-					<div class="col-md-6 pets-show-left">
-						<h3>Temporibus autem quibusdam et aut officiis </h3>
-						<h4>cum soluta nobis est eligendi optio</h4>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
-					</div>
-					<div class="col-md-6 pets-show-right">
-						<img src="images/p5.png" alt="" class="img-responsive">
-					</div>
-				 <div class="clearfix"> </div>
-				</div>
-			  </li>
-		    </ul>
-		 </div>
-	  </section>
-	</div>
-</div>
--->
+
 <!--pets show end here-->
 <!-- FlexSlider -->
-				  <script defer src="js/jquery.flexslider.js"></script>
-				  <script type="text/javascript">
-					$(function(){
-					 
-					});
-					$(window).load(function(){
-					  $('.flexslider').flexslider({
-						animation: "slide",
-						start: function(slider){
-						  $('body').removeClass('loading');
-						}
-					  });
-					});
-				  </script>
-			<!-- FlexSlider -->
+<script type="text/javascript">
+    $(function () {
+
+    });
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function (slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+</script>
+<!-- FlexSlider -->
 
 <!--services start here-->
 <div class="services" id="services">
-	<div class="container">
-		<div class="services-main">
-			<div class="ser-top">
-				<h3>Data Collection</h3>
-			</div>
-			<div class="ser-bottom">
-				<div class="blog-grids">
-					<h4>Image Data</h4>
-					<p>Some pets have one or more photos, which can be found in image information part through Pet ID.</p>
-				</div>
-				<div class="gallery-grids">
-					<div class="gallery-grid">
-						<div class="gallery-img slideanim">
-							<figure class="effect-jazz">
-								<a href="#portfolioModal1"  data-toggle="modal">
-									<img src="images/0a0e8c15b-1.jpg" alt="img25" class="img-responsive"/>
-								</a>
-							</figure>
-						</div>
-						<div class="gallery-img slideanim">
-							<figure class="effect-jazz">
-								<a href="#portfolioModal2"  data-toggle="modal">
-									<img src="images/00a1a8af4-1.jpg" alt="img25" class="img-responsive"/>
-								</a>
-							</figure>
-						</div>
-						<div class="gallery-img slideanim">
-							<figure class="effect-jazz">
-								<a href="#portfolioModal3"  data-toggle="modal">
-									<img src="images/0a1b56e66-1.jpg" alt="img25" class="img-responsive"/>
-								</a>
-							</figure>
-						</div>
-					</div>
-					<div class="gallery-grid">
-						<div class="gallery-img slideanim">
-							<figure class="effect-jazz">
-								<a href="#portfolioModal4"  data-toggle="modal">
-									<img src="images/0a1b57b57-1.jpg" alt="img25" class="img-responsive"/>
-								</a>
-							</figure>
-						</div>
-						<div class="gallery-img slideanim">
-							<figure class="effect-jazz">
-								<a href="#portfolioModal5"  data-toggle="modal">
-									<img src="images/0a8fc6614-1.jpg" alt="img25" class="img-responsive"/>
-								</a>
-							</figure>
-						</div>
-						<div class="gallery-img slideanim">
-							<figure class="effect-jazz">
-								<a href="#portfolioModal6"  data-toggle="modal">
-									<img src="images/0a4b42306-1.jpg" alt="img25" class="img-responsive"/>
-								</a>
-							</figure>
-						</div>
-					</div>
-					<div class="gallery-grid">
-						<div class="gallery-img slideanim">
-							<figure class="effect-jazz">
-								<a href="#portfolioModal7"  data-toggle="modal">
-									<img src="images/0a9f9f178-1.jpg" alt="img25" class="img-responsive"/>
-								</a>
-							</figure>
-						</div>
-						<div class="gallery-img slideanim">
-							<figure class="effect-jazz">
-								<a href="#portfolioModal8"  data-toggle="modal">
-									<img src="images/0a5be413e-1.jpg" alt="img25" class="img-responsive"/>
-								</a>
-							</figure>
-						</div>
-						<div class="gallery-img slideanim">
-							<figure class="effect-jazz">
-								<a href="#portfolioModal9"  data-toggle="modal">
-									<img src="images/0a14ac037-1.jpg" alt="img25" class="img-responsive"/>
-								</a>
-							</figure>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="blog-grids">
-					<h4>Text Data</h4>
-					<p>	Text information part includes: Age, Breed, Gender, Color, Maturity Size, FurLength, Vaccinated, Dewormed, Sterilized, Quantity, Fee, State, Description, Adoption Speed. </p>
-				</div>
-			</div>
-			<!--
-			<div class="ser-bottom">
-				<div class="col-md-4 ser-grid">
-					 <div class="view view-first">
-	                    <img src="images/s1.png" />
-	                    <div class="mask">
-	                        <h2>Pets</h2>	                                              
-	                    </div>
-                    </div>
-					<h4>Lorem ipsum</h4>
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
-					<div class="ser-btn">
-						<a href="single.html">Learn More</a>
-					</div>
-				</div>
-				<div class="col-md-4 ser-grid">
-					<div class="view view-first">
-	                    <img src="images/s2.png" />
-	                    <div class="mask">
-	                        <h2>Pets</h2>	                                              
-	                    </div>
-                    </div>
-					<h4>Lorem ipsum</h4>
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
-					<div class="ser-btn">
-						<a href="single.html">Learn More</a>
-					</div>
-				</div>
-				<div class="col-md-4 ser-grid">
-					<div class="view view-first">
-	                    <img src="images/s3.png" />
-	                    <div class="mask">
-	                        <h2>Pets</h2>	                                              
-	                    </div>
-                    </div>
-					<h4>Lorem ipsum</h4>
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
-					<div class="ser-btn">
-						<a href="single.html">Learn More</a>
-					</div>
-				</div>
-				<div class="col-md-4 ser-grid">
-					<div class="view view-first">
-	                    <img src="images/s4.png" />
-	                    <div class="mask">
-	                        <h2>Pets</h2>	                                              
-	                    </div>
-                    </div>
-					<h4>Lorem ipsum</h4>
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
-					<div class="ser-btn">
-						<a href="single.html">Learn More</a>
-					</div>
-				</div>
-				<div class="col-md-4 ser-grid">
-					<div class="view view-first">
-	                    <img src="images/s5.png" />
-	                    <div class="mask">
-	                        <h2>Pets</h2>	                                              
-	                    </div>
-                    </div>
-					<h4>Lorem ipsum</h4>
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
-					<div class="ser-btn">
-						<a href="single.html">Learn More</a>
-					</div>
-				</div>
-				<div class="col-md-4 ser-grid">
-					<div class="view view-first">
-	                    <img src="images/s6.png" />
-	                    <div class="mask">
-	                        <h2>Pets</h2>	                                              
-	                    </div>
-                    </div>
-					<h4>Lorem ipsum</h4>
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
-					<div class="ser-btn">
-						<a href="single.html">Learn More</a>
-					</div>
-				</div>
-			 <div class="clearfix"> </div>
-			</div>
-			-->
-		</div>
-	</div>
-</div>
-<!--services end here-->
-<!--service call strat here-->
-<!--<div class="service-call">
-	<div class="container">
-		<div class="service-call-main">
-			<div class="services-call-left">
-				<h4>Nor again is there anyone who loves</h4>
-				<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
-			</div>
-			<div class="services-call-right">
-				<a href="single.html">Read More</a>
-			</div>
-		  <div class="clearfix"> </div>
-		</div>	
-	</div>
-</div> -->
-<!--service call end here-->
-<!---gallery strat here-->
-<div id="gallery" class="gallery">
-	<div class="container">
-		<h3 class="tittle need_col">Job Division</h3>
-		<table class="table table-bordered" style="text-align: center;">
-			<thead>
-			<tr align="center">
-				<th align="center" colspan="2">Tasks</th>
-				<th align="center">Ran Xin</th>
-				<th align="center">Li Lingxiao</th>
-				<th align="center">Zhang Yi</th>
-				<th align="center">Wang Jiaxin</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<th rowspan="3">Data</th>
-				<td>Data collection</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-			</tr>
-			<tr>
-				<td>Data pre-processing</td>
-				<td>✓</td>
-				<td></td>
-				<td>✓</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Database organization</td>
-				<td></td>
-				<td>✓</td>
-				<td></td>
-				<td>✓</td>
-			</tr>
-			<tr>
-				<th rowspan="2">Algorithm</th>
-				<td>Deep learning algorithm</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-			</tr>
-			<tr>
-				<td>Revise the algorithm to suit cluster computation</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-			</tr>
-			<tr>
-				<th rowspan="3">Spark Cluster</th>
-				<td>Deploy the project to Spark cluster and accomplish the training process</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-			</tr>
-			<tr>
-				<td>Cluster maintenance</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-			</tr>
-			<tr>
-				<td>Performance Evaluation</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-			</tr>
-			<tr>
-				<th rowspan="5">Others</th>
-				<td>Web UI Design</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Prepare presentation PPT</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>✓</td>
-			</tr>
-			<tr>
-				<td>Live demo and presentation</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-			</tr>
-			<tr>
-				<td>Demo video preparation</td>
-				<td></td>
-				<td></td>
-				<td>✓</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Write the final report</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-				<td>✓</td>
-			</tr>
-			</tbody>
-		</table>
-		<!--<div class="gallery-grids">
-				<div class="gallery-grid">
-					<div class="gallery-img slideanim">
-						<figure class="effect-jazz">
-							<a href="#portfolioModal1"  data-toggle="modal">		
-								<img src="images/g1.jpg" alt="img25" class="img-responsive"/>										
-									</a>													
-							</figure>
-					</div>
-					<div class="gallery-img slideanim">
-						<figure class="effect-jazz">
-							<a href="#portfolioModal2"  data-toggle="modal">		
-								<img src="images/g2.jpg" alt="img25" class="img-responsive"/>										
-									</a>															
-							</figure>
-					</div>
-					<div class="gallery-img slideanim">
-						<figure class="effect-jazz">
-							<a href="#portfolioModal3"  data-toggle="modal">		
-								<img src="images/g3.jpg" alt="img25" class="img-responsive"/>										
-									</a>															
-							</figure>
-					</div>
-				</div>
-				<div class="gallery-grid">
-					<div class="gallery-img slideanim">
-						<figure class="effect-jazz">
-							<a href="#portfolioModal4"  data-toggle="modal">		
-								<img src="images/g4.jpg" alt="img25" class="img-responsive"/>										
-									</a>						
-							</figure>
-					</div>
-					<div class="gallery-img slideanim">
-						<figure class="effect-jazz">
-							<a href="#portfolioModal5"  data-toggle="modal">		
-								<img src="images/g5.jpg" alt="img25" class="img-responsive"/>										
-									</a>						
-							</figure>
-					</div>
-					<div class="gallery-img slideanim">
-						<figure class="effect-jazz">
-							<a href="#portfolioModal6"  data-toggle="modal">		
-								<img src="images/g6.jpg" alt="img25" class="img-responsive"/>										
-									</a>						
-							</figure>
-					</div>
-				</div>
-				<div class="gallery-grid">
-					 <div class="gallery-img slideanim">
-						<figure class="effect-jazz">
-							<a href="#portfolioModal7"  data-toggle="modal">		
-								<img src="images/g7.jpg" alt="img25" class="img-responsive"/>										
-									</a>						
-							</figure>
-					</div>
-					<div class="gallery-img slideanim">
-						<figure class="effect-jazz">
-							<a href="#portfolioModal8"  data-toggle="modal">		
-								<img src="images/g8.jpg" alt="img25" class="img-responsive"/>										
-									</a>						
-						</figure>
-					</div>
-					<div class="gallery-img slideanim">
-						<figure class="effect-jazz">
-							<a href="#portfolioModal9"  data-toggle="modal">		
-								<img src="images/g9.jpg" alt="img25" class="img-responsive"/>										
-									</a>					
-							</figure>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-		</div>	-->
-	</div>
-</div>
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
+    <div class="container">
+        <div class="services-main">
+            <div class="ser-top">
+                <h3>Data Collection</h3>
             </div>
-        </div>
-        <div class="container">
-		
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h3>Fenny</h3>
-                        <img src="images/0a0e8c15b-1.jpg" class="img-responsive" alt="">
-                        <p>Fenny was rescued from Old Klang Rd market when she was only 2 months old and I have fostered her since then. She is 5 mths old now and I hope she can get a good home. She looks like a mixed breed of local mongrel and Dalmation. She is a very quiet girl and does not make too much noise, that makes her a very good companion for children or elderly couple. Please call Mrs Lai of Paws Mission for more adoption details.</p>
-                    </div>
+            <div class="ser-bottom">
+                <div class="blog-grids">
+                    <h4>Image Data</h4>
+                    <p>Some pets have one or more photos, which can be found in image information part through Pet
+                        ID.</p>
                 </div>
-           
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-         
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h3>Xiao Bai</h3>
-                      
-                        <img src="images/00a1a8af4-1.jpg" class="img-responsive" alt="">
-                        <p>Xiao Bai is very friendly and tame. Will make a great companion and family pet. Contact: Location: Petaling Jaya,Old Town</p>
+                <div class="gallery-grids">
+                    <div class="gallery-grid">
+                        <div class="gallery-img slideanim">
+                            <figure class="effect-jazz">
+                                <a href="#portfolioModal1" data-toggle="modal">
+                                    <img src="images/0a0e8c15b-1.jpg" alt="img25" class="img-responsive"/>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="gallery-img slideanim">
+                            <figure class="effect-jazz">
+                                <a href="#portfolioModal2" data-toggle="modal">
+                                    <img src="images/00a1a8af4-1.jpg" alt="img25" class="img-responsive"/>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="gallery-img slideanim">
+                            <figure class="effect-jazz">
+                                <a href="#portfolioModal3" data-toggle="modal">
+                                    <img src="images/0a1b56e66-1.jpg" alt="img25" class="img-responsive"/>
+                                </a>
+                            </figure>
+                        </div>
                     </div>
+                    <div class="gallery-grid">
+                        <div class="gallery-img slideanim">
+                            <figure class="effect-jazz">
+                                <a href="#portfolioModal4" data-toggle="modal">
+                                    <img src="images/0a1b57b57-1.jpg" alt="img25" class="img-responsive"/>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="gallery-img slideanim">
+                            <figure class="effect-jazz">
+                                <a href="#portfolioModal5" data-toggle="modal">
+                                    <img src="images/0a8fc6614-1.jpg" alt="img25" class="img-responsive"/>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="gallery-img slideanim">
+                            <figure class="effect-jazz">
+                                <a href="#portfolioModal6" data-toggle="modal">
+                                    <img src="images/0a4b42306-1.jpg" alt="img25" class="img-responsive"/>
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="gallery-grid">
+                        <div class="gallery-img slideanim">
+                            <figure class="effect-jazz">
+                                <a href="#portfolioModal7" data-toggle="modal">
+                                    <img src="images/0a9f9f178-1.jpg" alt="img25" class="img-responsive"/>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="gallery-img slideanim">
+                            <figure class="effect-jazz">
+                                <a href="#portfolioModal8" data-toggle="modal">
+                                    <img src="images/0a5be413e-1.jpg" alt="img25" class="img-responsive"/>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="gallery-img slideanim">
+                            <figure class="effect-jazz">
+                                <a href="#portfolioModal9" data-toggle="modal">
+                                    <img src="images/0a14ac037-1.jpg" alt="img25" class="img-responsive"/>
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-           
-        </div>
-    </div>
-    </div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-           
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h3>Oyen N Stripe</h3>
-                     
-                        <img src="images/0a1b56e66-1.jpg" class="img-responsive" alt="">
-						<p>Please adopt this cat. I have to to let go them because i am too busy to take care of them. Both are active and healty.</p>
-                    </div>
+                <div class="blog-grids">
+                    <h4>Text Data</h4>
+                    <p> Text information part includes: Age, Breed, Gender, Color, Maturity Size, FurLength, Vaccinated,
+                        Dewormed, Sterilized, Quantity, Fee, State, Description, Adoption Speed. </p>
                 </div>
             </div>
-       
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h3></h3>
-                       
-                        <img src="images/0a1b57b57-1.jpg" class="img-responsive" alt="">
-                        <p>Beautiful, loving and friendly cat for adoption.</p>
-                    </div>
-                </div>
-            
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
 
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h3>Monsoon</h3>
-                       
-                        <img src="images/0a8fc6614-1.jpg" class="img-responsive" alt="">
-                        <p>Leader of the Monsoon pack.</p>
-                    </div>
+            <!--service call end here-->
+            <!---gallery strat here-->
+            <div id="gallery" class="gallery">
+                <div class="container">
+                    <h3 class="tittle need_col">Job Division</h3>
+                    <table class="table table-bordered" style="text-align: center;">
+                        <thead>
+                        <tr align="center">
+                            <th align="center" colspan="2">Tasks</th>
+                            <th align="center">Ran Xin</th>
+                            <th align="center">Li Lingxiao</th>
+                            <th align="center">Zhang Yi</th>
+                            <th align="center">Wang Jiaxin</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th rowspan="3">Data</th>
+                            <td>Data collection</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Data pre-processing</td>
+                            <td>✓</td>
+                            <td></td>
+                            <td>✓</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Database organization</td>
+                            <td></td>
+                            <td>✓</td>
+                            <td></td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">Algorithm</th>
+                            <td>Deep learning algorithm</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Revise the algorithm to suit cluster computation</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="3">Spark Cluster</th>
+                            <td>Deploy the project to Spark cluster and accomplish the training process</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Cluster maintenance</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Performance Evaluation</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="5">Others</th>
+                            <td>Web UI Design</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Prepare presentation PPT</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Live demo and presentation</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Demo video preparation</td>
+                            <td></td>
+                            <td></td>
+                            <td>✓</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Write the final report</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--<div class="gallery-grids">
+                            <div class="gallery-grid">
+                                <div class="gallery-img slideanim">
+                                    <figure class="effect-jazz">
+                                        <a href="#portfolioModal1"  data-toggle="modal">
+                                            <img src="images/g1.jpg" alt="img25" class="img-responsive"/>
+                                                </a>
+                                        </figure>
+                                </div>
+                                <div class="gallery-img slideanim">
+                                    <figure class="effect-jazz">
+                                        <a href="#portfolioModal2"  data-toggle="modal">
+                                            <img src="images/g2.jpg" alt="img25" class="img-responsive"/>
+                                                </a>
+                                        </figure>
+                                </div>
+                                <div class="gallery-img slideanim">
+                                    <figure class="effect-jazz">
+                                        <a href="#portfolioModal3"  data-toggle="modal">
+                                            <img src="images/g3.jpg" alt="img25" class="img-responsive"/>
+                                                </a>
+                                        </figure>
+                                </div>
+                            </div>
+                            <div class="gallery-grid">
+                                <div class="gallery-img slideanim">
+                                    <figure class="effect-jazz">
+                                        <a href="#portfolioModal4"  data-toggle="modal">
+                                            <img src="images/g4.jpg" alt="img25" class="img-responsive"/>
+                                                </a>
+                                        </figure>
+                                </div>
+                                <div class="gallery-img slideanim">
+                                    <figure class="effect-jazz">
+                                        <a href="#portfolioModal5"  data-toggle="modal">
+                                            <img src="images/g5.jpg" alt="img25" class="img-responsive"/>
+                                                </a>
+                                        </figure>
+                                </div>
+                                <div class="gallery-img slideanim">
+                                    <figure class="effect-jazz">
+                                        <a href="#portfolioModal6"  data-toggle="modal">
+                                            <img src="images/g6.jpg" alt="img25" class="img-responsive"/>
+                                                </a>
+                                        </figure>
+                                </div>
+                            </div>
+                            <div class="gallery-grid">
+                                 <div class="gallery-img slideanim">
+                                    <figure class="effect-jazz">
+                                        <a href="#portfolioModal7"  data-toggle="modal">
+                                            <img src="images/g7.jpg" alt="img25" class="img-responsive"/>
+                                                </a>
+                                        </figure>
+                                </div>
+                                <div class="gallery-img slideanim">
+                                    <figure class="effect-jazz">
+                                        <a href="#portfolioModal8"  data-toggle="modal">
+                                            <img src="images/g8.jpg" alt="img25" class="img-responsive"/>
+                                                </a>
+                                    </figure>
+                                </div>
+                                <div class="gallery-img slideanim">
+                                    <figure class="effect-jazz">
+                                        <a href="#portfolioModal9"  data-toggle="modal">
+                                            <img src="images/g9.jpg" alt="img25" class="img-responsive"/>
+                                                </a>
+                                        </figure>
+                                </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                    </div>	-->
                 </div>
-           
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
             </div>
-        </div>
-        <div class="container">
-           
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h3>Marley & Kiara (URGENT ADOPTION)</h3>
-                       
-                        <img src="images/0a4b42306-1.jpg" class="img-responsive" alt="">
-                        <p>We are looking for a new home for our lovely Golden Retrivers, Marley (Male) and Kiara (Female) as we are relocating to overseas and we can't take them along. It is a very sad moment for us after 2 years of looking after them, especially our kids. We hope to find them a new home as a pair as they have strong bonding with each other. You can also view them on the video below:</p>
+            <!-- Portfolio Modals -->
+            <div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog"
+                 aria-hidden="true">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-            
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h3>Lulu/Buttermuffin/Ginger</h3>
-                     
-                        <img src="images/0a9f9f178-1.jpg" class="img-responsive" alt="">
-                        <p>We (my family and I) found these lovely pups in a bush near a restaurant we frequently visit. The restaurant owner had been kind to feed them all the while. If we had not taken them in, the pups would not have made it in such harsh weather conditions and with the number of dominant strays in the area. The pups are doing well and healthy! They are a playful bunch and are in need of a forever home. Just a few conditions to adopt (because we want the best for these furry babies!) : 1) Please do not chain or cage them :( 2) Commit to daily walks 3) Allow dogs indoors (think of the horrible heat outside!) 4) Agree to spay after 3 months. Why you ask ~Reduces the number of homeless pets killed ~Improves your pet's health ~Reduces unruly behavior ~Save on the cost of pet care Read more: Thank you :)</p>
-                    </div>
-                </div>
-         
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-            
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h3>W3</h3>
-                     
-                        <img src="images/0a5be413e-1.jpg" class="img-responsive" alt="">
-                        <p>FOR ADOPTION</p>
-                    </div>
-                </div>
-         
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-            
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h3>Momo</h3>
-                     
-                        <img src="images/0a14ac037-1.jpg" class="img-responsive" alt="">
-                        <p>*Active and very healthy! *Affectionate *Adapt easily with new environment *Love indoors!</p>
-                    </div>
-                </div>
-         
-        </div>
-    </div>
-</div>
-<!-- /Portfolio Modals -->
-<!-- //gallery -->
-<!--contact strat-->
-<div class="contact" id="contact">
-	<div class="container">
-		<div class="contact-main">
-			<div class="contact-top">
-				<h3>Meeting Record</h3>
-			</div>
-			<div class="col-md-6">
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h3 class="panel-title">February 23, 1:00 PM - 3:00 PM</h3>
-					</div>
-					<div class="panel-body">
-						Topic selected. All group members participated.
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h3 class="panel-title">March 2, 1:30 PM - 5:30 PM</h3>
-					</div>
-					<div class="panel-body">
-						Build 8-VM cluster. All group members participated.
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h3 class="panel-title">March 5, 3:30 PM - 10:30 PM</h3>
-					</div>
-					<div class="panel-body">
-						Turning parameters of Spark and Hadoop. Data pre-processing. All group members participated.
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--contact end here-->
-<!--footer strat here-->
-<div class="footer">
-		<div class="container">
-			<div class="footer-main">
-				<div class="col-md-4 footer-left">
-					<h4>Documents</h4>
-					<ul>
-						<li><a href="https://docs.google.com/document/d/1EFsXy1IczNUPsAeFKXOjkMGFkOFzlw388_JuaYviuz8/edit?usp=sharing"><span class="pt-foot"> </span>Term project proposal</a></li>
-						<li><a href="#"><span class="pt-foot"> </span>Cluster report</a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 footer-left">
-					<h4>Information</h4>
-					<ul>
-						<li><a class="scroll" href="index.html"><span class="pt-foot"> </span>Home</a></li>
-						<li><a class="scroll" href="#about"><span class="pt-foot"> </span>Project Description</a></li>
-						<li><a class="scroll" href="#services"><span class="pt-foot"> </span>Data Collection</a></li>
-						<li><a class="scroll" href="#gallery"><span class="pt-foot"> </span>Job Division</a></li>
-						<li><a class="scroll" href="#contact"><span class="pt-foot"> </span>Meeting Record</a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 footer-left">
-					<h4>Useful Links</h4>
-					<ul>
-						<li><a href="https://www.kaggle.com"><span class="pt-foot"> </span>Kaggle</a></li>
-						<li><a href="https://www.petfinder.my"><span class="pt-foot"> </span>PetFinder</a></li>
+                    <div class="container">
 
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="footer-text">			
-				<div class="ft-right">
-					<p>Comp7305 Cluster and Cloud Computing Group 17</p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<script type="text/javascript">
-										$(document).ready(function() {
-											/*
-											var defaults = {
-									  			containerID: 'toTop', // fading element id
-												containerHoverID: 'toTopHover', // fading element hover id
-												scrollSpeed: 1200,
-												easingType: 'linear' 
-									 		};
-											*/
-											
-											$().UItoTop({ easingType: 'easeOutQuart' });
-											
-										});
-									</script>
-						<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h3>Fenny</h3>
+                                <img src="images/0a0e8c15b-1.jpg" class="img-responsive" alt="">
+                                <p>Fenny was rescued from Old Klang Rd market when she was only 2 months old and I have
+                                    fostered her since then. She is 5 mths old now and I hope she can get a good home.
+                                    She looks like a mixed breed of local mongrel and Dalmation. She is a very quiet
+                                    girl and does not make too much noise, that makes her a very good companion for
+                                    children or elderly couple. Please call Mrs Lai of Paws Mission for more adoption
+                                    details.</p>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog"
+                 aria-hidden="true">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h3>Xiao Bai</h3>
+
+                                <img src="images/00a1a8af4-1.jpg" class="img-responsive" alt="">
+                                <p>Xiao Bai is very friendly and tame. Will make a great companion and family pet.
+                                    Contact: Location: Petaling Jaya,Old Town</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog"
+                 aria-hidden="true">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h3>Oyen N Stripe</h3>
+
+                                <img src="images/0a1b56e66-1.jpg" class="img-responsive" alt="">
+                                <p>Please adopt this cat. I have to to let go them because i am too busy to take care of
+                                    them. Both are active and healty.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog"
+                 aria-hidden="true">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h3></h3>
+
+                                <img src="images/0a1b57b57-1.jpg" class="img-responsive" alt="">
+                                <p>Beautiful, loving and friendly cat for adoption.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog"
+                 aria-hidden="true">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h3>Monsoon</h3>
+
+                                <img src="images/0a8fc6614-1.jpg" class="img-responsive" alt="">
+                                <p>Leader of the Monsoon pack.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog"
+                 aria-hidden="true">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h3>Marley & Kiara (URGENT ADOPTION)</h3>
+
+                                <img src="images/0a4b42306-1.jpg" class="img-responsive" alt="">
+                                <p>We are looking for a new home for our lovely Golden Retrivers, Marley (Male) and
+                                    Kiara (Female) as we are relocating to overseas and we can't take them along. It is
+                                    a very sad moment for us after 2 years of looking after them, especially our kids.
+                                    We hope to find them a new home as a pair as they have strong bonding with each
+                                    other. You can also view them on the video below:</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog"
+                 aria-hidden="true">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h3>Lulu/Buttermuffin/Ginger</h3>
+
+                                <img src="images/0a9f9f178-1.jpg" class="img-responsive" alt="">
+                                <p>We (my family and I) found these lovely pups in a bush near a restaurant we
+                                    frequently visit. The restaurant owner had been kind to feed them all the while. If
+                                    we had not taken them in, the pups would not have made it in such harsh weather
+                                    conditions and with the number of dominant strays in the area. The pups are doing
+                                    well and healthy! They are a playful bunch and are in need of a forever home. Just a
+                                    few conditions to adopt (because we want the best for these furry babies!) : 1)
+                                    Please do not chain or cage them :( 2) Commit to daily walks 3) Allow dogs indoors
+                                    (think of the horrible heat outside!) 4) Agree to spay after 3 months. Why you ask
+                                    ~Reduces the number of homeless pets killed ~Improves your pet's health ~Reduces
+                                    unruly behavior ~Save on the cost of pet care Read more: Thank you :)</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog"
+                 aria-hidden="true">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h3>W3</h3>
+
+                                <img src="images/0a5be413e-1.jpg" class="img-responsive" alt="">
+                                <p>FOR ADOPTION</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog"
+                 aria-hidden="true">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h3>Momo</h3>
+
+                                <img src="images/0a14ac037-1.jpg" class="img-responsive" alt="">
+                                <p>*Active and very healthy! *Affectionate *Adapt easily with new environment *Love
+                                    indoors!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /Portfolio Modals -->
+            <!-- //gallery -->
+            <!--contact strat-->
+            <div class="contact" id="contact">
+                <div class="container">
+                    <div class="contact-main">
+                        <div class="contact-top">
+                            <h3>Meeting Record</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">February 23, 1:00 PM - 3:00 PM</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Topic selected. All group members participated.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">March 2, 1:30 PM - 5:30 PM</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Build 8-VM cluster. All group members participated.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">March 5, 3:30 PM - 10:30 PM</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Turning parameters of Spark and Hadoop. Data pre-processing. All group members
+                                    participated.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--contact end here-->
+            <!--footer strat here-->
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-main">
+                        <div class="col-md-4 footer-left">
+                            <h4>Documents</h4>
+                            <ul>
+                                <li>
+                                    <a href="https://docs.google.com/document/d/1EFsXy1IczNUPsAeFKXOjkMGFkOFzlw388_JuaYviuz8/edit?usp=sharing"><span
+                                            class="pt-foot"> </span>Term project proposal</a></li>
+                                <li><a href="#"><span class="pt-foot"> </span>Cluster report</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 footer-left">
+                            <h4>Information</h4>
+                            <ul>
+                                <li><a class="scroll" href="index.html"><span class="pt-foot"> </span>Home</a></li>
+                                <li><a class="scroll" href="#about"><span class="pt-foot"> </span>Project
+                                    Description</a></li>
+                                <li><a class="scroll" href="#services"><span class="pt-foot"> </span>Data Collection</a>
+                                </li>
+                                <li><a class="scroll" href="#gallery"><span class="pt-foot"> </span>Job Division</a>
+                                </li>
+                                <li><a class="scroll" href="#contact"><span class="pt-foot"> </span>Meeting Record</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 footer-left">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><a href="https://www.kaggle.com"><span class="pt-foot"> </span>Kaggle</a></li>
+                                <li><a href="https://www.petfinder.my"><span class="pt-foot"> </span>PetFinder</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="footer-text">
+                        <div class="ft-right">
+                            <p>Comp7305 Cluster and Cloud Computing Group 17</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        /*
+                        var defaults = {
+                              containerID: 'toTop', // fading element id
+                            containerHoverID: 'toTopHover', // fading element hover id
+                            scrollSpeed: 1200,
+                            easingType: 'linear'
+                         };
+                        */
+
+                        $().UItoTop({easingType: 'easeOutQuart'});
+
+                    });
+                </script>
+                <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
